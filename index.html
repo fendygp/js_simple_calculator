@@ -9,7 +9,7 @@
                    margin: 50px auto
                  }
         
-        .container .show-calc{border: 2px solid #95A5A6; 
+        .container .show-calculate{border: 2px solid #95A5A6; 
                               height:50px;
                               width:100%;
                               font-size:25px;
@@ -43,7 +43,7 @@
         
     </style>
     <script>
-        function calcNumbers(result){
+        function calculateNumbers(result){
             form.displayResult.value=form.displayResult.value+result;
             
         }
@@ -61,35 +61,35 @@
     <div class="container">
         <form name="form">
         <div class="display">
-            <input class="show-calc" type="text" placeholder="0" name="displayResult" />
+            <input class="show-calculate" type="text" placeholder="0" name="displayResult" />
         </div>
             <div class="buttons">
               <div class="row">
-                <input class="box box-num" type="button" name="b7" value="7" onClick="calcNumbers(b7.value)">
-                  <input class="box box-num" type="button" name="b8" value="8" onClick="calcNumbers(b8.value)">
-                  <input class="box box-num" type="button" name="b9" value="9" onClick="calcNumbers(b9.value)">
-                  <input class="box box-opr" type="button" name="addb" value="+" onClick="calcNumbers(addb.value)">
+                <input class="box box-num" type="button" name="b7" value="7" onClick="calculateNumbers(b7.value)">
+                  <input class="box box-num" type="button" name="b8" value="8" onClick="calculateNumbers(b8.value)">
+                  <input class="box box-num" type="button" name="b9" value="9" onClick="calculateNumbers(b9.value)">
+                  <input class="box box-opr" type="button" name="addbutton" value="+" onClick="calculateNumbers(addbutton.value)">
                 </div>
                 
                 <div class="row">
-                <input class="box box-num" type="button" name="b4" value="4" onClick="calcNumbers(b4.value)">
-                  <input class="box box-num" type="button" name="b5" value="5" onClick="calcNumbers(b5.value)">
-                  <input class="box box-num" type="button" name="b6" value="6" onClick="calcNumbers(b6.value)">
-                  <input class="box box-opr" type="button" name="subb" value="-" onClick="calcNumbers(subb.value)">
+                <input class="box box-num" type="button" name="b4" value="4" onClick="calculateNumbers(b4.value)">
+                  <input class="box box-num" type="button" name="b5" value="5" onClick="calculateNumbers(b5.value)">
+                  <input class="box box-num" type="button" name="b6" value="6" onClick="calculateNumbers(b6.value)">
+                  <input class="box box-opr" type="button" name="subbutton" value="-" onClick="calculateNumbers(subbutton.value)">
                 </div>
                 
                 <div class="row">
-                  <input class="box box-num" type="button" name="b1" value="1" onClick="calcNumbers(b1.value)">
-                  <input  class="box box-num"type="button" name="b2" value="2" onClick="calcNumbers(b2.value)">
-                  <input class="box box-num" type="button" name="b3" value="3" onClick="calcNumbers(b3.value)">
-                  <input class="box box-opr" type="button" name="mulb" value="*" onClick="calcNumbers(mulb.value)">
+                  <input class="box box-num" type="button" name="b1" value="1" onClick="calculateNumbers(b1.value)">
+                  <input  class="box box-num"type="button" name="b2" value="2" onClick="calculateNumbers(b2.value)">
+                  <input class="box box-num" type="button" name="b3" value="3" onClick="calculateNumbers(b3.value)">
+                  <input class="box box-opr" type="button" name="multibutton" value="*" onClick="calculateNumbers(multibutton.value)">
                 </div>
                 
                 <div class="row">
-                  <input class="box box-num" type="button" name="b0" value="0" onClick="calcNumbers(b0.value)">
-                  <input  class="box box-num" type="button" name="potb" value="." onClick="calcNumbers(potb.value)">
-                  <input class="box box-clear" type="button" name="divb" value="c" onClick="clearDisplay()">
-                  <input class="box box-opr" type="button" name="divb" value="/" onClick="calcNumbers(divb.value)">
+                  <input class="box box-num" type="button" name="b0" value="0" onClick="calculateNumbers(b0.value)">
+                  <input  class="box box-num" type="button" name="potbutton" value="." onClick="calculateNumbers(potbutton.value)">
+                  <input class="box box-clear" type="button"  value="c" onClick="clearDisplay()">
+                  <input class="box box-opr" type="button" name="divbutton" value="/" onClick="calculateNumbers(divbutton.value)">
                 </div>
                 <div class="row">
                     <input class="box box-result" type="button" value="=" onClick="displayResult.value=eval(displayResult.value)">
